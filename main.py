@@ -4,7 +4,7 @@ from markdown_writer import export_markdown_files
 
 def main():
     # 1. Leer el archivo del Kindle
-    raw = open_txt("my_clippings.txt")  
+    raw = open_txt("My Clippings.txt")  
     if raw is None:
         return  # No se puede seguir
 
