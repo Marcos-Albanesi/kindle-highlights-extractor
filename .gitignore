@@ -1,0 +1,10 @@
+# Ignorar caché de Python
+__pycache__/
+
+# Carpetas locales que no deben subirse
+txt_for_project/
+txt_originals/
+
+# Ignorar archivos Markdown generados automáticamente
+*.md
+!README.md
