@@ -27,24 +27,20 @@ def parse_info(non_empty_lines):
 
 # Cada uno de esos bloque anteriores, los agrupo según el libro, creando un diccionario por libro
 def group_by_book(highlights):
-    book_highlights = []
-
-    for each_list in highlights:
-        dictionary = {
-            "title": each_list[0],
-            "metadata": each_list[1],
-            "highlight": each_list[2]
-        }
-        book_highlights.append(dictionary)
-
     highlights_by_book = {}
-    
-    for book in book_highlights:
-        title = book["title"]
+
+    for lista in highlights:
+        title = lista[0]
+
+        highlight = {
+            "title": lista[0],
+            "metadata": lista[1],
+            "highlight": lista[2]
+        }
 
         if title not in highlights_by_book:
             highlights_by_book[title] = []
-        
-        highlights_by_book[title].append(book)
-    
+
+        highlights_by_book[title].append(highlight)
+
     return highlights_by_book
