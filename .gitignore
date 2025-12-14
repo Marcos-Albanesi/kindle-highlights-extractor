@@ -8,3 +8,6 @@ txt_originals/
 # Ignorar archivos Markdown generados automáticamente
 *.md
 !README.md
+
+# Archivo del OS
+.DS_Store
