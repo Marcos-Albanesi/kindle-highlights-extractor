@@ -1,3 +1,6 @@
+# Archivo del OS
+.DS_Store
+
 # Ignorar caché de Python
 __pycache__/
 
@@ -5,9 +8,5 @@ __pycache__/
 txt_for_project/
 txt_originals/
 
-# Ignorar archivos Markdown generados automáticamente
-*.md
-!README.md
-
-# Archivo del OS
-.DS_Store
+# Carpeta de Resultados
+Resultados/

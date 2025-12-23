@@ -1,8 +1,14 @@
 # Función para crear los MD por libro.
 
+import os
+
 def export_markdown_files(highlights_by_book):
+    output_folder = "Resultados"
+    os.makedirs(output_folder, exist_ok=True)
+
     for title, highlights in highlights_by_book.items():
         filename = title.replace(":", "").replace("?", "").replace("/", "_") + ".md"
+        file_path = os.path.join(output_folder, filename)
 
         content = f"# {title}\n\n"
 
@@ -19,8 +25,8 @@ def export_markdown_files(highlights_by_book):
             content += item["highlight"] + "\n"
 
         try:
-            with open(filename, "x", encoding="utf-8") as f:
+            with open(file_path, "x", encoding="utf-8") as f:
                 f.write(content)
-            print(f"Archivo creado: {filename}.")
+            print(f"Archivo creado: {file_path}.")
         except FileExistsError:
-            print(f"El resumen del libro {filename} ya existe.")
+            print(f"El resumen del libro {filename} ya existe en {output_folder}.")

@@ -8,6 +8,7 @@ La idea nació como una forma de aprender Python desde cero y, al mismo tiempo, 
 - Lee un archivo de texto exportado desde Kindle.
 - Agrupa los resaltados por libro.
 - Crea un archivo en formato Markdown por cada libro que contiene todos sus resaltados.
+- Crea una carpeta de "Resultados" donde quedarán guardados los archivos Markdown del punto anterior.
 - Extrae fechas de lectura: en cada archivo, encontrarás al inicio la fecha de cuándo empezaste y terminaste el libro (basado en la fecha del primer y último resaltado).
 
 ## 🎯 Por qué lo hice
